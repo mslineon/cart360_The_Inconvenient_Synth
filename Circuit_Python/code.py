@@ -1,68 +1,40 @@
 import board
-import time
-import analogio
 import digitalio
+import analogio
+import touchio
+import busio
+import time
+import adafruit_mpr121
+from adafruit_mpr121 import MPR121
 
-'''
-    ultra sonic sensor
-    trig goes to gp3
-    echo goes to gp2
-    
-    myo sensor
-    sig goes to gp26
-'''
-
-#ultrasonic Sensor set up
-trig = digitalio.DigitalInOut(board.GP3)
-trig.direction = digitalio.Direction.OUTPUT
-echo = digitalio.DigitalInOut(board.GP2)
-echo.direction = digitalio.Direction.INPUT
-
+#initializing pins
 #debug LED
 default_led = digitalio.DigitalInOut(board.LED)
 default_led.direction = digitalio.Direction.OUTPUT
 
-#myoware sensor
-sensor_myoware = analogio.AnalogIn(board.GP26) #initialize channel 0, 12-bit ADC (default)
+#myoware sensor pins
+human_myoware = analogio.AnalogIn(board.GP26)
+plant_myoware = analogio.AnalogIn(board.GP28)
 
-def ultra():
-   trig.value = False
-   time.sleep(0.001 / 1000000)
+#photoresistor
+photoresistor = analogio.AnalogIn(board.GP27)
 
-   trig.value = True
-   time.sleep(0.005 / 1000000)
-   trig.value = True
 
-   while echo.value == 0:
-       signaloff = time.monotonic()
-   while echo.value == 1:
-       signalon = time.monotonic()
-
-   timepassed = (signalon - signaloff) * 100000 # convert nanosec to microsec
-   distance = (timepassed * 0.0343) / 2
-
-   # print("The distance from object is ",distance,"cm")
-   # print(f"d{distance}d m{secret_other_number}m")
-   return distance
-
-def myo():
-
+while True:
     default_led.value = True
 
     #myoware sensor
     #0-65535 across voltage range 0.0v - 3.3v
-    reading = sensor_myoware.value #Read sensor data
-    voltage = (reading / 65535) * 3.3  # This gives the value in volts
-    # print(f"Voltage: {voltage:.2f} V")
-    # print(reading / 65535)
-    # time.sleep(0.1) #small delay so the serial terminal is not flooded with data
-    return reading / 65535
-    # distance = read_distance()
-    # print("Distance: ", distance, 'cm')
-    # time.sleep(1)
+    hu_reading = human_myoware.value #Read sensor data
+    hu_voltage = (hu_reading / 65535) * 3.3  # This gives the value in volts
+    print(f"Human Voltage: {hu_voltage:.2f} V")
 
-while True:
-   ultra_val = ultra()
-   myo_val = myo()
-   print(f"u{ultra_val}u m{myo_val}m")
-   time.sleep(0.05)
+    pla_reading = plant_myoware.value
+    pla_voltage = (pla_reading / 65535) * 3.3
+    print(f"Plant Voltage: {pla_voltage:.2f} V")
+
+    #photoresistor sensor values, goes UP when light is blocked
+    light_value = photoresistor.value
+    print(f"Light Value: {light_value:.2f}")
+
+    time.sleep(0.5) #small delay so the serial terminal is not flooded with data
