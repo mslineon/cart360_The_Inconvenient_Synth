@@ -2,16 +2,42 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 9,
-			"minor" : 0,
-			"revision" : 1,
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 100.0, 1127.0, 983.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-76",
@@ -134,17 +160,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 620.0, 254.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -183,7 +198,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -246,7 +261,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 234.0, 901.0, 47.0, 22.0 ],
+					"patching_rect" : [ 234.0, 927.0, 47.0, 22.0 ],
 					"text" : "*~ 0.03"
 				}
 
@@ -258,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 264.0, 944.0, 78.0, 22.0 ],
+					"patching_rect" : [ 264.0, 970.0, 78.0, 22.0 ],
 					"text" : "delay~ 20 20"
 				}
 
@@ -267,11 +282,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 268.0, 976.0, 30.0, 30.0 ]
+					"patching_rect" : [ 268.0, 1002.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -279,11 +294,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.0, 952.0, 30.0, 30.0 ]
+					"patching_rect" : [ 217.0, 978.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -296,16 +311,42 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 9,
-							"minor" : 0,
-							"revision" : 1,
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 59.0, 119.0, 1000.0, 780.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -313,19 +354,21 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 155.0, 57.0, 564.0, 127.0 ],
+									"patching_rect" : [ 155.0, 57.0, 564.0, 131.0 ],
 									"text" : "\n    print(f\"H{hu_voltage}H\")  # formatted for max (full precision, no text)\n\n    print(f\"P{pla_voltage}P\")  # formatted for max (full precision, no text)\n\n    print(f\"L{light_value}L\")\n\n    for i in range(3):  # amount of touchpads\n        print(f\"T{i} {int(touch_pad[i].value)}T\")  # formatted for max (id value)"
 								}
 
 							}
  ],
-						"lines" : [  ],
-						"originid" : "pat-14"
+						"lines" : [  ]
 					}
 ,
 					"patching_rect" : [ 953.0, 279.0, 41.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p help"
@@ -507,7 +550,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 451.0, 737.0, 472.0, 22.0 ],
+					"patching_rect" : [ 451.0, 737.0, 476.0, 22.0 ],
 					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
@@ -579,7 +622,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 56.0, 631.0, 196.0, 34.0 ]
+					"patching_rect" : [ 56.0, 630.0, 196.0, 34.0 ]
 				}
 
 			}
@@ -592,7 +635,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 139.0, 811.0, 361.0, 25.0 ],
+					"patching_rect" : [ 139.0, 837.0, 361.0, 25.0 ],
 					"text" : "set  <freq1> <amp1> <freq2> <amp2>… <ampn> <freqn>"
 				}
 
@@ -605,7 +648,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 705.0, 96.0, 19.0 ],
+					"patching_rect" : [ 539.0, 705.0, 96.0, 20.0 ],
 					"text" : "Partial Numbers"
 				}
 
@@ -633,7 +676,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 402.0, 784.0, 112.0, 25.0 ],
+					"patching_rect" : [ 402.0, 810.0, 112.0, 25.0 ],
 					"text" : "interleave lists"
 				}
 
@@ -647,7 +690,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.0, 762.0, 198.0, 23.0 ],
+					"patching_rect" : [ 55.0, 742.0, 198.0, 23.0 ],
 					"text" : "vexpr $f1 * $f2 @scalarmode 1"
 				}
 
@@ -661,7 +704,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.0, 813.0, 79.0, 23.0 ],
+					"patching_rect" : [ 55.0, 839.0, 79.0, 23.0 ],
 					"text" : "prepend set"
 				}
 
@@ -675,7 +718,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 55.0, 786.0, 342.5, 23.0 ],
+					"patching_rect" : [ 55.0, 812.0, 342.5, 23.0 ],
 					"text" : "zl lace"
 				}
 
@@ -691,7 +734,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 447.0, 626.0, 232.0, 66.0 ],
+					"patching_rect" : [ 447.0, 630.0, 232.0, 66.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1, 1, 0.921875, 0.828125, 0.765625, 0.703125, 0.625, 0.578125, 0.53125, 0.484375, 0.40625, 0.359375, 0.328125, 0.3125, 0.265625, 0.234375, 0.1875, 0.140625, 0.125, 0.09375, 0.078125, 0.078125, 0.0625, 0.046875, 0.03125, 0.03125, 0.03125, 0.015625, 0, 0, 0, 0.015625 ],
@@ -699,7 +742,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "multislider",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "multislider",
 							"parameter_type" : 3
 						}
@@ -723,7 +765,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 258.0, 642.0, 146.0, 125.0 ],
+					"patching_rect" : [ 258.0, 642.0, 146.0, 128.0 ],
 					"text" : "0.33 0.66 0.99 1.32 1.65 1.98 2.31 2.64 2.97 3.3 3.63 3.96 4.29 4.62 4.95 5.28 5.61 5.94 6.27 6.6 6.93 7.26 7.59 7.92 8.25 8.58 8.91 9.24 9.57 9.9 10.23 10.56"
 				}
 
@@ -737,7 +779,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 217.0, 856.0, 205.0, 23.0 ],
+					"patching_rect" : [ 217.0, 882.0, 205.0, 23.0 ],
 					"text" : "oscbank~ 32 128 128"
 				}
 
@@ -749,7 +791,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 503.0, 811.0, 155.0, 33.0 ],
+					"patching_rect" : [ 503.0, 837.0, 155.0, 34.0 ],
 					"style" : "helpfile_label",
 					"text" : "partials higher than n have amplitudes of zero."
 				}
@@ -900,7 +942,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 64.5, 845.5, 226.5, 845.5 ],
+					"midpoints" : [ 64.5, 871.5, 226.5, 871.5 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1233,7 +1275,22 @@
 
 			}
  ],
-		"originid" : "pat-12"
+		"parameters" : 		{
+			"obj-17" : [ "multislider", "multislider", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
