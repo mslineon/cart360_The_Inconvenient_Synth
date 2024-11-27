@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 709.0, 191.0, 401.0, 711.0 ],
+		"rect" : [ 1188.0, 193.0, 558.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,9 +40,118 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "envelope filter resonance [def. 0.5, + 0.5]",
+					"id" : "obj-60",
+					"index" : 4,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 272.0, 18.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "envelope filter cutoff frequency (float) [def. 10, +- 50]",
+					"id" : "obj-59",
+					"index" : 3,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 223.0, 18.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 43.0, 415.0, 42.0, 20.0 ],
+					"text" : "ooooh"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 38.0, 391.0, 52.0, 22.0 ],
+					"text" : "phasor~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"linecount" : 16,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 181.0, 460.0, 150.0, 227.0 ],
+					"text" : "Cutoff Frequency:\nNegative numbers reverses envelope, making them sound in reverse\n\nHigher numbers almost sound bouncy\n\nResonance:\nHigher numbers almost makes it sound like it's playing multiple times\n\nLower numbers makes it sound drier"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 100.5, 101.0, 71.0, 89.0 ],
+					"text" : "Provides a bilateral exponential distribution of frequencies"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 72.0, 291.0, 112.0, 34.0 ],
+					"text" : "line signal for pitch and envelope"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 332.0, 21.0, 150.0, 62.0 ],
+					"text" : "Code from Designing Sound by Andy Nash\n\nPorted from Pure Data"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 315.0, 350.0, 73.0, 34.0 ],
+					"text" : "Envelope generation"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -52,9 +161,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "speed of droplets (integer, in ms)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -65,9 +174,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "droplet base frequency (integer)",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -106,7 +215,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1078.0, 207.0, 640.0, 480.0 ],
+						"rect" : [ -31958.0, -31915.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -501,8 +610,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 17.0, 565.0, 29.5, 22.0 ],
-					"text" : "*~"
+					"patching_rect" : [ 17.0, 565.0, 30.0, 22.0 ],
+					"text" : "*~ 1"
 				}
 
 			}
@@ -974,7 +1083,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.725490196078431, 0.905882352941176, 1.0 ],
 					"destination" : [ "obj-34", 1 ],
 					"source" : [ "obj-33", 0 ]
 				}
@@ -1011,9 +1119,21 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "lilac",
 				"default" : 				{
