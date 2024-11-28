@@ -2,42 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 6,
+			"major" : 9,
+			"minor" : 0,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 556.0, 116.0, 1394.0, 879.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"rect" : [ 34.0, 116.0, 1916.0, 1290.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "plant",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
+		"style" : "plant-1",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-116",
@@ -45,7 +20,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 16.0, 64.0, 34.0 ],
+					"patching_rect" : [ 335.0, 16.0, 66.0, 33.0 ],
 					"text" : "number of cicadas"
 				}
 
@@ -250,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 228.0, 326.0, 53.0, 103.0 ],
+					"patching_rect" : [ 228.0, 326.0, 53.0, 100.0 ],
 					"text" : "sounds like it's clipping if high?\nlow sounds noisier"
 				}
 
@@ -263,7 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.0, 246.0, 98.0, 52.0 ],
+					"patching_rect" : [ 735.0, 246.0, 98.0, 50.0 ],
 					"text" : "changing filter resonance here makes sound more or less clicky"
 				}
 
@@ -290,11 +265,11 @@
 					"patching_rect" : [ 37.0, 784.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-7", "flonum", "float", 5003.0, 5, "obj-9", "flonum", "float", 0.374000012874603, 5, "obj-15", "flonum", "float", 0.340000003576279, 5, "obj-16", "flonum", "float", 4000.0, 5, "obj-17", "flonum", "float", 0.699999988079071, 5, "obj-18", "flonum", "float", 6000.0, 5, "obj-24", "flonum", "float", 2.0, 5, "obj-25", "flonum", "float", 0.925000011920929, 5, "obj-43", "flonum", "float", 70.0, 5, "obj-42", "flonum", "float", 0.0, 5, "obj-75", "flonum", "float", 999.0, 5, "obj-73", "flonum", "float", 0.40200001001358, 5, "obj-67", "flonum", "float", 0.275000005960464, 5, "obj-66", "flonum", "float", 1150.0, 5, "obj-65", "flonum", "float", 0.275000005960464, 5, "obj-64", "flonum", "float", 1100.0, 5, "obj-60", "flonum", "float", 2.0, 5, "obj-59", "flonum", "float", 0.922999978065491, 5, "obj-45", "flonum", "float", 70.0, 5, "obj-44", "flonum", "float", 0.0, 5, "obj-101", "flonum", "float", 0.003000000026077, 5, "obj-102", "flonum", "float", 0.014999999664724 ]
+							"data" : [ 5, "obj-7", "number", "float", 5003.0, 5, "obj-9", "number", "float", 0.374000012874603, 5, "obj-15", "number", "float", 0.340000003576279, 5, "obj-16", "number", "float", 4000.0, 5, "obj-17", "number", "float", 0.699999988079071, 5, "obj-18", "number", "float", 6000.0, 5, "obj-24", "number", "float", 2.0, 5, "obj-25", "number", "float", 0.925000011920929, 5, "obj-43", "number", "float", 70.0, 5, "obj-42", "number", "float", 0.0, 5, "obj-75", "number", "float", 999.0, 5, "obj-73", "number", "float", 0.40200001001358, 5, "obj-67", "number", "float", 0.275000005960464, 5, "obj-66", "number", "float", 1150.0, 5, "obj-65", "number", "float", 0.275000005960464, 5, "obj-64", "number", "float", 1100.0, 5, "obj-60", "number", "float", 2.0, 5, "obj-59", "number", "float", 0.922999978065491, 5, "obj-45", "number", "float", 70.0, 5, "obj-44", "number", "float", 0.0, 5, "obj-101", "number", "float", 0.003000000026077, 5, "obj-102", "number", "float", 0.014999999664724 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-7", "flonum", "float", 5003.0, 5, "obj-9", "flonum", "float", 0.374000012874603, 5, "obj-15", "flonum", "float", 0.340000003576279, 5, "obj-16", "flonum", "float", 4000.0, 5, "obj-17", "flonum", "float", 0.699999988079071, 5, "obj-18", "flonum", "float", 6000.0, 5, "obj-24", "flonum", "float", 2.0, 5, "obj-25", "flonum", "float", 0.925000011920929, 5, "obj-43", "flonum", "float", 70.0, 5, "obj-42", "flonum", "float", 0.0, 5, "obj-75", "flonum", "float", 999.0, 5, "obj-73", "flonum", "float", 0.40200001001358, 5, "obj-67", "flonum", "float", 0.275000005960464, 5, "obj-66", "flonum", "float", 999.0, 5, "obj-65", "flonum", "float", 0.275000005960464, 5, "obj-64", "flonum", "float", 1001.0, 5, "obj-60", "flonum", "float", 2.0, 5, "obj-59", "flonum", "float", 0.922999978065491, 5, "obj-45", "flonum", "float", 70.0, 5, "obj-44", "flonum", "float", 0.0, 5, "obj-101", "flonum", "float", 0.009999999776483, 5, "obj-102", "flonum", "float", 0.050000000745058 ]
+							"data" : [ 5, "obj-7", "number", "float", 5003.0, 5, "obj-9", "number", "float", 0.374000012874603, 5, "obj-15", "number", "float", 0.340000003576279, 5, "obj-16", "number", "float", 4000.0, 5, "obj-17", "number", "float", 0.699999988079071, 5, "obj-18", "number", "float", 6000.0, 5, "obj-24", "number", "float", 2.0, 5, "obj-25", "number", "float", 0.925000011920929, 5, "obj-43", "number", "float", 70.0, 5, "obj-42", "number", "float", 0.0, 5, "obj-75", "number", "float", 999.0, 5, "obj-73", "number", "float", 0.40200001001358, 5, "obj-67", "number", "float", 0.275000005960464, 5, "obj-66", "number", "float", 999.0, 5, "obj-65", "number", "float", 0.275000005960464, 5, "obj-64", "number", "float", 1001.0, 5, "obj-60", "number", "float", 2.0, 5, "obj-59", "number", "float", 0.922999978065491, 5, "obj-45", "number", "float", 70.0, 5, "obj-44", "number", "float", 0.0, 5, "obj-101", "number", "float", 0.009999999776483, 5, "obj-102", "number", "float", 0.050000000745058 ]
 						}
  ]
 				}
@@ -307,7 +282,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1384.0, 374.0, 85.0, 34.0 ],
+					"patching_rect" : [ 1384.0, 374.0, 85.0, 33.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -319,7 +294,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1273.0, 374.0, 85.0, 34.0 ],
+					"patching_rect" : [ 1273.0, 374.0, 85.0, 33.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -331,7 +306,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1250.0, 224.0, 210.0, 34.0 ],
+					"patching_rect" : [ 1250.0, 224.0, 210.0, 33.0 ],
 					"text" : "modulation signal:\ncreates short pulses to multiply noise"
 				}
 
@@ -354,7 +329,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 638.0, 382.0, 85.0, 34.0 ],
+					"patching_rect" : [ 638.0, 382.0, 85.0, 33.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -366,7 +341,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 382.0, 85.0, 34.0 ],
+					"patching_rect" : [ 520.0, 382.0, 85.0, 33.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -408,7 +383,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 512.0, 216.5, 203.0, 34.0 ],
+					"patching_rect" : [ 512.0, 216.5, 203.0, 33.0 ],
 					"text" : "modulation signal:\ncreates short pulses to shape noise"
 				}
 
@@ -431,7 +406,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 754.5, 401.0, 92.592599987983704, 89.0 ],
+					"patching_rect" : [ 754.5, 401.0, 92.592599987983704, 87.0 ],
 					"text" : "filters limit frequency range of noise to between 1000 and 1200 Hz by default"
 				}
 
@@ -443,7 +418,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 785.5, 531.0, 59.0, 34.0 ],
+					"patching_rect" : [ 785.5, 531.0, 59.0, 33.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -455,7 +430,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 782.5, 336.0, 64.0, 34.0 ],
+					"patching_rect" : [ 782.5, 336.0, 64.0, 33.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -467,7 +442,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 34.0 ],
+					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 33.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -479,7 +454,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 408.0, 92.0, 89.0 ],
+					"patching_rect" : [ 13.0, 408.0, 92.0, 87.0 ],
 					"text" : "filters limit frequency range of noise to between 5000 and 8000 Hz by default"
 				}
 
@@ -491,7 +466,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 344.0, 64.0, 34.0 ],
+					"patching_rect" : [ 41.0, 344.0, 64.0, 33.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -2262,6 +2237,7 @@
 
 			}
  ],
+		"originid" : "pat-78",
 		"styles" : [ 			{
 				"name" : "plant",
 				"default" : 				{
@@ -2294,7 +2270,43 @@
 				"parentstyle" : "",
 				"multi" : 0
 			}
- ]
+, 			{
+				"name" : "plant-1",
+				"default" : 				{
+					"accentcolor" : [ 0.611764705882353, 0.76078431372549, 0.525490196078431, 1.0 ],
+					"bgcolor" : [ 0.152941176470588, 0.203921568627451, 0.129411764705882, 1.0 ],
+					"bgfillcolor" : 					{
+						"angle" : 270.0,
+						"autogradient" : 0.0,
+						"color" : [ 0.176470588235294, 0.211764705882353, 0.156862745098039, 1.0 ],
+						"color1" : [ 0.317647058823529, 0.388235294117647, 0.290196078431373, 1.0 ],
+						"color2" : [ 0.176470588235294, 0.211764705882353, 0.156862745098039, 1.0 ],
+						"proportion" : 0.5,
+						"type" : "gradient"
+					}
+,
+					"bubble_bgcolor" : [ 0.83921568627451, 0.909803921568627, 0.807843137254902, 1.0 ],
+					"bubble_outlinecolor" : [ 0.517647058823529, 0.592156862745098, 0.490196078431373, 1.0 ],
+					"clearcolor" : [ 0.858823529411765, 0.905882352941176, 0.843137254901961, 1.0 ],
+					"color" : [ 0.83921568627451, 0.909803921568627, 0.807843137254902, 1.0 ],
+					"editing_bgcolor" : [ 0.87843137254902, 0.905882352941176, 0.866666666666667, 1.0 ],
+					"elementcolor" : [ 0.513725490196078, 0.592156862745098, 0.490196078431373, 1.0 ],
+					"locked_bgcolor" : [ 0.858823529411765, 0.905882352941176, 0.843137254901961, 1.0 ],
+					"patchlinecolor" : [ 0.52156862745098, 0.592156862745098, 0.490196078431373, 1.0 ],
+					"selectioncolor" : [ 0.905882352941176, 0.796078431372549, 0.635294117647059, 1.0 ],
+					"stripecolor" : [ 0.223529411764706, 0.266666666666667, 0.2, 1.0 ],
+					"syntax_attributecolor" : [ 0.650980392156863, 0.745098039215686, 0.890196078431372, 1.0 ],
+					"syntax_objargcolor" : [ 0.854901960784314, 0.905882352941176, 0.83921568627451, 1.0 ],
+					"syntax_objectcolor" : [ 0.670588235294118, 0.890196078431372, 0.615686274509804, 1.0 ],
+					"textcolor" : [ 0.137254901960784, 0.184313725490196, 0.117647058823529, 1.0 ],
+					"textcolor_inverse" : [ 0.854901960784314, 0.905882352941176, 0.83921568627451, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ],
+		"editing_bgcolor" : [ 0.87843137254902, 0.905882352941176, 0.866666666666667, 1.0 ]
 	}
 
 }
