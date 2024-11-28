@@ -5,13 +5,9 @@ import touchio
 import busio
 import time
 import adafruit_mpr121
-# patch-1
-from adafruit_mpr121 import MPR121
 
-
-
-#main
 #initializing pins
+
 #debug LED
 default_led = digitalio.DigitalInOut(board.LED)
 default_led.direction = digitalio.Direction.OUTPUT
@@ -19,11 +15,32 @@ default_led.direction = digitalio.Direction.OUTPUT
 #myoware sensor pins
 human_myoware = analogio.AnalogIn(board.GP26)
 plant_myoware = analogio.AnalogIn(board.GP28)
-#patch-1
+# <<<<<<< main
+# =======
+# #patch-1
+# >>>>>>> main
 
 #photoresistor
 photoresistor = analogio.AnalogIn(board.GP27)
 
+# <<<<<<< main
+#MPR 121 for touch capacitive sensors
+i2c = busio.I2C(scl=board.GP7, sda=board.GP6)
+touch_pad = adafruit_mpr121.MPR121(i2c)
+
+#capacitive plant
+touch_pin = touchio.TouchIn(board.GP15)
+
+def touched():
+    for i in range(12):
+        if touch_pad[i].value:
+            print(i)
+
+def plant_touch():
+    if touch_pin.value:
+        print(1)
+
+=======
 i2c = busio.I2C(scl=board.GP7, sda=board.GP6)
 touch_pad = adafruit_mpr121.MPR121(i2c)
 
@@ -39,6 +56,7 @@ while True:
     # ---- same as above but modified to send to max
     hu_voltage = (hu_reading / 65535)   # dont want volts, we want value between 0 and 1
     print(f"H{hu_voltage}H")            # formatted for max (full precision, no text)
+# >>>>>>> main
 
 
     pla_reading = plant_myoware.value
@@ -49,8 +67,16 @@ while True:
     pla_voltage = (pla_reading / 65535) # dont want volts, we want value between 0 and 1
     print(f"P{pla_voltage}P")           # formatted for max (full precision, no text)
 
+# <<<<<<< main
+    photo_sensor()
+
+    touched()
+
+    plant_touch()
+# =======
     #photoresistor sensor values, goes UP when light is blocked
     light_value = photoresistor.value
+# >>>>>>> main
 
     # ---- keep this for reference ----
     # print(f"Light Value: {light_value:.2f}")
