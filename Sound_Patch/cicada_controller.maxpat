@@ -2,17 +2,42 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 9,
-			"minor" : 0,
-			"revision" : 2,
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 60.0, 114.0, 674.0, 723.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
 		"style" : "plant-1",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-5",
@@ -20,8 +45,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 329.0, 107.0, 97.0, 22.0 ],
-					"text" : "scale 0. 1. 2 100"
+					"patching_rect" : [ 329.0, 107.0, 90.0, 22.0 ],
+					"text" : "scale 0. 1. 2 50"
 				}
 
 			}
@@ -63,7 +88,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "number of cicadas",
 					"id" : "obj-28",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -152,7 +177,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 51.0, 512.0, 34.0, 22.0 ],
-					"text" : "*~ 0."
+					"text" : "*~ 1."
 				}
 
 			}
@@ -190,7 +215,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.0, 107.0, 103.0, 22.0 ],
-					"text" : "scale 0. 1. 20 200"
+					"text" : "scale 0. 1. 20 500"
 				}
 
 			}
@@ -202,7 +227,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.0, 107.0, 123.0, 22.0 ],
-					"text" : "scale 0. 1. 2000 6000"
+					"text" : "scale 0. 1. 1000 6000"
 				}
 
 			}
@@ -318,24 +343,63 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 9,
-							"minor" : 0,
-							"revision" : 2,
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 548.0, 249.0, 435.0, 678.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
 						"style" : "plant",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-4",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 247.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-7",
@@ -356,7 +420,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 211.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 182.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -428,7 +492,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 45.0, 176.0, 63.0, 22.0 ],
-									"text" : "metro 100"
+									"text" : "metro 300"
 								}
 
 							}
@@ -551,6 +615,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-14", 4 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -578,7 +649,6 @@
 
 							}
  ],
-						"originid" : "pat-218",
 						"styles" : [ 							{
 								"name" : "plant",
 								"default" : 								{
@@ -616,8 +686,11 @@
 ,
 					"patching_rect" : [ 51.0, 259.0, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "plant"
+						"style" : "plant",
+						"tags" : ""
 					}
 ,
 					"text" : "p propagate"
@@ -770,6 +843,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 2 ],
 					"midpoints" : [ 338.5, 371.0, 119.166666666666657, 371.0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 3 ],
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -821,7 +903,6 @@
 
 			}
  ],
-		"originid" : "pat-216",
 		"styles" : [ 			{
 				"name" : "plant",
 				"default" : 				{
@@ -879,9 +960,6 @@
 					"patchlinecolor" : [ 0.52156862745098, 0.592156862745098, 0.490196078431373, 1.0 ],
 					"selectioncolor" : [ 0.905882352941176, 0.796078431372549, 0.635294117647059, 1.0 ],
 					"stripecolor" : [ 0.223529411764706, 0.266666666666667, 0.2, 1.0 ],
-					"syntax_attributecolor" : [ 0.650980392156863, 0.745098039215686, 0.890196078431372, 1.0 ],
-					"syntax_objargcolor" : [ 0.854901960784314, 0.905882352941176, 0.83921568627451, 1.0 ],
-					"syntax_objectcolor" : [ 0.670588235294118, 0.890196078431372, 0.615686274509804, 1.0 ],
 					"textcolor" : [ 0.137254901960784, 0.184313725490196, 0.117647058823529, 1.0 ],
 					"textcolor_inverse" : [ 0.854901960784314, 0.905882352941176, 0.83921568627451, 1.0 ]
 				}
