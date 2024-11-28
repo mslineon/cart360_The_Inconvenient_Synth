@@ -15,15 +15,13 @@ default_led.direction = digitalio.Direction.OUTPUT
 #myoware sensor pins
 human_myoware = analogio.AnalogIn(board.GP26)
 plant_myoware = analogio.AnalogIn(board.GP28)
-# <<<<<<< main
-# =======
+
 # #patch-1
-# >>>>>>> main
+
 
 #photoresistor
 photoresistor = analogio.AnalogIn(board.GP27)
 
-# <<<<<<< main
 #MPR 121 for touch capacitive sensors
 i2c = busio.I2C(scl=board.GP7, sda=board.GP6)
 touch_pad = adafruit_mpr121.MPR121(i2c)
@@ -31,18 +29,29 @@ touch_pad = adafruit_mpr121.MPR121(i2c)
 #capacitive plant
 touch_pin = touchio.TouchIn(board.GP15)
 
+
 def touched():
-    for i in range(12):
-        if touch_pad[i].value:
-            print(i)
+    # for i in range(12): # little modification to make it work with max
+    #     if touch_pad[i].value:
+    #         print(i)
+    # capacitive touch pads
+    for i in range(3):  # only have 3 touchpads, and we want to print no matter what if its 0 or 1
+        print(f"T{i}_{int(touch_pad[i].value)}T")    # formatted for max (id value) this part is important 
 
 def plant_touch():
     if touch_pin.value:
-        print(1)
+        # print(1) 
+        print(f"K1K") ## this way we can catch it with regex in max, looks weird but it works
 
-=======
-i2c = busio.I2C(scl=board.GP7, sda=board.GP6)
-touch_pad = adafruit_mpr121.MPR121(i2c)
+def photo_sensor():
+    #photoresistor sensor values, goes UP when light is blocked
+    light_value = photoresistor.value
+    # ---- keep this for reference ----
+    # print(f"Light Value: {light_value:.2f}")
+    # ---- same as above but modified to send to max
+    print(f"L{light_value}L")
+
+
 
 while True:
     default_led.value = True
@@ -56,8 +65,6 @@ while True:
     # ---- same as above but modified to send to max
     hu_voltage = (hu_reading / 65535)   # dont want volts, we want value between 0 and 1
     print(f"H{hu_voltage}H")            # formatted for max (full precision, no text)
-# >>>>>>> main
-
 
     pla_reading = plant_myoware.value
 
@@ -67,25 +74,16 @@ while True:
     pla_voltage = (pla_reading / 65535) # dont want volts, we want value between 0 and 1
     print(f"P{pla_voltage}P")           # formatted for max (full precision, no text)
 
-# <<<<<<< main
     photo_sensor()
 
     touched()
 
     plant_touch()
-# =======
-    #photoresistor sensor values, goes UP when light is blocked
-    light_value = photoresistor.value
-# >>>>>>> main
 
-    # ---- keep this for reference ----
-    # print(f"Light Value: {light_value:.2f}")
-    # ---- same as above but modified to send to max
-    print(f"L{light_value}L")
 
-    # capacitive touch pads
-    for i in range(3):  # amount of touchpads
-        print(f"T{i} {int(touch_pad[i].value)}T")    # formatted for max (id value)
+    #
+
+    
 
 #=======
 #
