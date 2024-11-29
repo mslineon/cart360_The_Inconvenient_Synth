@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 620.0, 87.0, 1394.0, 1031.0 ],
+		"rect" : [ 556.0, 116.0, 1394.0, 879.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 335.0, 16.0, 64.0, 34.0 ],
+					"text" : "number of cicadas"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 420.0, 30.0, 77.0, 20.0 ],
+					"text" : "unhappiness"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-111",
+					"index" : 4,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 420.0, 58.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.0, 30.0, 48.0, 20.0 ],
+					"text" : "pitches"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-99",
 					"maxclass" : "comment",
@@ -81,7 +128,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "setvalue" ],
-					"patching_rect" : [ 283.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 283.0, 58.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -99,25 +146,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-100",
-					"index" : 3,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 19.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-96",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 456.0, 60.0, 57.0, 22.0 ],
+					"patching_rect" : [ 335.0, 99.0, 57.0, 22.0 ],
 					"text" : "chans $1"
 				}
 
@@ -126,12 +160,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-88",
-					"index" : 4,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 456.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 335.0, 58.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -144,7 +178,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "setvalue" ],
-					"patching_rect" : [ 239.5, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 240.0, 58.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -216,7 +250,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 228.0, 326.0, 53.0, 100.0 ],
+					"patching_rect" : [ 228.0, 326.0, 53.0, 103.0 ],
 					"text" : "sounds like it's clipping if high?\nlow sounds noisier"
 				}
 
@@ -229,7 +263,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.0, 246.0, 98.0, 50.0 ],
+					"patching_rect" : [ 735.0, 246.0, 98.0, 52.0 ],
 					"text" : "changing filter resonance here makes sound more or less clicky"
 				}
 
@@ -273,7 +307,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1384.0, 374.0, 85.0, 33.0 ],
+					"patching_rect" : [ 1384.0, 374.0, 85.0, 34.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -285,7 +319,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1273.0, 374.0, 85.0, 33.0 ],
+					"patching_rect" : [ 1273.0, 374.0, 85.0, 34.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -297,7 +331,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1250.0, 224.0, 210.0, 33.0 ],
+					"patching_rect" : [ 1250.0, 224.0, 210.0, 34.0 ],
 					"text" : "modulation signal:\ncreates short pulses to multiply noise"
 				}
 
@@ -320,7 +354,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 638.0, 382.0, 85.0, 33.0 ],
+					"patching_rect" : [ 638.0, 382.0, 85.0, 34.0 ],
 					"text" : "louder clickier signal"
 				}
 
@@ -332,7 +366,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 382.0, 85.0, 33.0 ],
+					"patching_rect" : [ 520.0, 382.0, 85.0, 34.0 ],
 					"text" : "softer buzzier signal"
 				}
 
@@ -374,7 +408,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 512.0, 216.5, 203.0, 33.0 ],
+					"patching_rect" : [ 512.0, 216.5, 203.0, 34.0 ],
 					"text" : "modulation signal:\ncreates short pulses to shape noise"
 				}
 
@@ -397,7 +431,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 754.5, 401.0, 92.592599987983704, 87.0 ],
+					"patching_rect" : [ 754.5, 401.0, 92.592599987983704, 89.0 ],
 					"text" : "filters limit frequency range of noise to between 1000 and 1200 Hz by default"
 				}
 
@@ -409,7 +443,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 785.5, 531.0, 59.0, 33.0 ],
+					"patching_rect" : [ 785.5, 531.0, 59.0, 34.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -421,7 +455,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 782.5, 336.0, 64.0, 33.0 ],
+					"patching_rect" : [ 782.5, 336.0, 64.0, 34.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -433,7 +467,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 33.0 ],
+					"patching_rect" : [ 42.0, 539.0, 59.25926399230957, 34.0 ],
 					"text" : "low-pass filters"
 				}
 
@@ -445,7 +479,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 408.0, 92.0, 87.0 ],
+					"patching_rect" : [ 13.0, 408.0, 92.0, 89.0 ],
 					"text" : "filters limit frequency range of noise to between 5000 and 8000 Hz by default"
 				}
 
@@ -457,7 +491,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 344.0, 64.0, 33.0 ],
+					"patching_rect" : [ 41.0, 344.0, 64.0, 34.0 ],
 					"text" : "high-pass filters"
 				}
 
@@ -1398,14 +1432,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-103", 1 ],
-					"midpoints" : [ 419.5, 135.0, 852.0, 135.0, 852.0, 252.0, 910.5, 252.0 ],
-					"source" : [ "obj-100", 0 ]
 				}
 
 			}

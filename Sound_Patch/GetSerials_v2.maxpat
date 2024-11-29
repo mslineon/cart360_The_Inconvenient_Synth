@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -273,7 +273,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -716,7 +716,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1192,7 +1192,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1495,7 +1495,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2021,11 +2021,11 @@
 				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1215.0, 308.0, 153.0, 22.0 ],
-					"text" : "cicada_frequency_changer"
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1242.5, 308.0, 99.0, 22.0 ],
+					"text" : "cicada_controller"
 				}
 
 			}
@@ -2128,7 +2128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.0, 261.5, 153.0, 33.0 ],
+					"patching_rect" : [ 120.0, 261.5, 153.0, 34.0 ],
 					"text" : "if we see a return/enter we push the data further"
 				}
 
@@ -2140,7 +2140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 395.0, 261.5, 152.0, 33.0 ],
+					"patching_rect" : [ 395.0, 261.5, 152.0, 34.0 ],
 					"text" : "integer to ascii (aka letters and stuff)"
 				}
 
@@ -2228,7 +2228,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2431,7 +2431,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3091,13 +3091,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
-					"source" : [ "obj-51", 1 ]
+					"order" : 0,
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
+					"order" : 1,
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -3474,42 +3476,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "chimes_sounds.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cicada_frequency_changer.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"name" : "cicada_controller.maxpat",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc.cicadas.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "raindrops.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "water_stream.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wind.maxpat",
-				"bootpath" : "~/Desktop/Sound_Patch",
+				"bootpath" : "~/Documents/cart360_The_Inconvenient_Synth/Sound_Patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
