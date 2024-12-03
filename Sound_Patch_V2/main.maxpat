@@ -784,7 +784,7 @@
 
 							}
  ],
-						"originid" : "pat-35",
+						"originid" : "pat-79",
 						"styles" : [ 							{
 								"name" : "plant-1",
 								"default" : 								{
@@ -837,7 +837,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1265.0, 752.0, 51.0, 22.0 ],
+					"patching_rect" : [ 1245.0, 719.0, 51.0, 22.0 ],
 					"text" : "r ---start"
 				}
 
@@ -1401,7 +1401,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-49"
+						"originid" : "pat-93"
 					}
 ,
 					"patching_rect" : [ 458.0, 228.0, 113.0, 22.0 ],
@@ -1651,7 +1651,7 @@
 
 							}
  ],
-						"originid" : "pat-51"
+						"originid" : "pat-95"
 					}
 ,
 					"patching_rect" : [ 209.0, 157.0, 73.0, 22.0 ],
@@ -2561,7 +2561,7 @@
 
 			}
  ],
-		"originid" : "pat-13",
+		"originid" : "pat-57",
 		"parameters" : 		{
 			"obj-54::obj-17" : [ "multislider", "multislider", 0 ],
 			"obj-65" : [ "live.gain~", "live.gain~", 0 ],
@@ -2582,42 +2582,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "chimes.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cicadaController.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc.cicadas.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "waterDrops.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "waterStream.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wind.maxpat",
-				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth-main 2/Sound_Patch",
+				"bootpath" : "~/Documents/02_Computation_Arts/02_YEAR 2024-2025/01_Fall 2024/CART360/02_Assignments/FINAL_PROJECT/cart360_The_Inconvenient_Synth/Sound_Patch_V2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
